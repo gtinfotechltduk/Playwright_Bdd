@@ -1,0 +1,12 @@
+{
+    "validUser": {
+      "username": "test_admin_user@looptest.co.uk",
+      "password": "upq0rfr-bkd-CDA7zyh"
+    },
+    "invalidUser": {
+      "username": "activity.member1@loop.com",
+      "password": "wrongpassword"
+    }
+  }
+
+ 

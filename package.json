@@ -1,0 +1,24 @@
+{
+  "name": "loop_playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.2.0",
+    "@playwright/test": "^1.52.0",
+    "@testomatio/reporter": "^1.6.17",
+    "@types/cucumber": "^6.0.1",
+    "@types/node": "^22.13.9",
+    "playwright": "^1.52.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^9.7.0",
+    "playwright_library_pagabo": "^1.0.7"
+  }
+}

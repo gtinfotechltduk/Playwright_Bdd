@@ -1,0 +1,110 @@
+# 📘 Playwright BDD Test Framework
+
+A robust test automation framework built with **Playwright**, **Cucumber (BDD)**, and the **Page Object Model (POM)** pattern, written in **TypeScript**.
+
+---
+
+## 📁 Project Structure
+
+```
+├── src/
+│   ├── features/            # BDD feature files
+│   │   └── login.feature    # Example feature file
+│   ├── step-definitions/    # Step definitions for features
+│   ├── pages/               # Page Object classes
+│   └── support/             # Hooks & custom world
+├── tsconfig.json            # TypeScript configuration
+└── package.json             # Project dependencies and scripts
+```
+
+---
+
+## 🛠️ Setup Instructions
+
+### 1. Clone the Repository
+
+```powershell
+git clone <repo-url>
+cd playwright-bdd-framework
+```
+
+### 2. Install Dependencies
+
+1. **Node.js:** [Download & install](https://nodejs.org/en/download)
+2. **NPM:**  
+   ```powershell
+   npm install
+   ```
+3. **Playwright:**  
+   ```powershell
+   npm init playwright@latest
+   ```
+4. **Cucumber:**  
+   ```powershell
+   npm install --save-dev @cucumber/cucumber
+   ```
+
+---
+
+## ✅ Key Technologies
+
+- [Playwright](https://playwright.dev/) — Browser automation framework
+- [Cucumber.js](https://github.com/cucumber/cucumber-js) — BDD framework
+- [TypeScript](https://www.typescriptlang.org/) — Strongly typed JavaScript
+
+---
+
+## 🔧 Available Scripts
+
+### Run All Tests
+
+```powershell
+npx cucumber-js
+```
+
+Runs all `.feature` files using Cucumber and Playwright.
+
+### Run Tagged Tests
+
+Use the `--tags` option to run specific tagged scenarios:
+
+- **Run tests with a specific tag (e.g., `@smoke`):**
+  ```powershell
+  npx cucumber-js --tags "@smoke"
+  ```
+
+- **Run tests with multiple tags (e.g., `@smoke` or `@regression`):**
+  ```powershell
+  npx cucumber-js --tags "@smoke or @regression"
+  ```
+
+- **Exclude a specific tag (e.g., `@regression`):**
+  ```powershell
+  npx cucumber-js --tags "not @regression"
+  ```
+
+---
+
+## 🔄 How to Extend the Framework
+
+1. **Add New Feature Files**  
+   Place new `.feature` files under `src/features/`.
+
+2. **Create Step Definitions**  
+   Add corresponding step definition files under `src/step-definitions/`.
+
+3. **Add Page Objects**  
+   Create new Page Object classes under `src/pages/` to encapsulate page-specific logic.
+
+4. **Use Tags for Test Organization**  
+   Use tags like `@smoke`, `@regression`, etc., to organize and filter tests.
+
+---
+
+## 📄 Additional Notes
+
+- Ensure your `tsconfig.json` is properly configured for TypeScript.
+- Use Playwright's debugging tools for troubleshooting test failures.
+- Follow the Page Object Model (POM) pattern to keep your tests maintainable and scalable.
+
+---
